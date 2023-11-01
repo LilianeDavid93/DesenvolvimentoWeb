@@ -1,0 +1,16 @@
+.titulolog {
+  text-align: center;
+  display: block;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: blueviolet;
+}
+.form {
+  display: block;
+  text-align: center;
+  background-color: rgba(148, 250, 216, 0.6);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(44, 96, 96);
+}
