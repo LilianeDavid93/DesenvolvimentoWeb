@@ -33,20 +33,18 @@ export default function Login() {
       setLogin("");
       setSenha("");
 
-      navigate("/home/" + login);
+      // navigate("/home/" + login);
       // navigate(`/${login}`);
+      navigate("/home");
     } else {
-      console.log("Login ou Senha Inválidos!");
+      alert("Login ou Senha Inválidos!");
     }
   };
-
   return (
     <div className="login">
-      <div className="titulolog">
-        <h1>Página de Login</h1>
-      </div>
       <div>
         <form className="form">
+          <h1>Página de Login</h1>
           <input
             type="text"
             placeholder="Digite Seu login"
@@ -61,7 +59,7 @@ export default function Login() {
             onChange={(e) => setSenha(e.target.value)}
           />
           <br />
-          <button type="button" onClick={entrar}>
+          <button className="botaouniversal" type="button" onClick={entrar}>
             Entrar
           </button>
         </form>

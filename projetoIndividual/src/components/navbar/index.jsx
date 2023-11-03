@@ -4,9 +4,8 @@ export default function Nav() {
   const { user } = useParams();
   return (
     <>
-      <h1>Bem vindo,{user}</h1>
-
-      <nav>
+      <nav className="navbar">
+        <h1>Bem vindo</h1>
         <ul>
           <li>
             <Link to="/home">Home</Link>
