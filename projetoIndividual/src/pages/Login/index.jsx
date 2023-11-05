@@ -16,7 +16,6 @@ export default function Login() {
   const { state } = useLocation();
   console.log(state);
 
-  // function entrar(){}
   const entrar = () => {
     console.log("FUNCAO ENTRAR");
     if (login == "" || senha == "") {
@@ -33,8 +32,6 @@ export default function Login() {
       setLogin("");
       setSenha("");
 
-      // navigate("/home/" + login);
-      // navigate(`/${login}`);
       navigate("/home");
     } else {
       alert("Login ou Senha Inválidos!");

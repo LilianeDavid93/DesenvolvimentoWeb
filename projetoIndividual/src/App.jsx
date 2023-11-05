@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/home" element={<Home />} />
       <Route path="*" element={<h1>Pagina Não Encontrada</h1>} />
