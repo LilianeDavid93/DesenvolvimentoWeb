@@ -1,0 +1,32 @@
+.card-container {
+  background-color: #333333;
+  padding: 1.1rem;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .left-side {
+  width: 20%;
+}
+.card-container .left-side img {
+  width: 100%;
+}
+.card-container .rigth-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0.8rem;
+  width: 80%;
+}
+.card-container .rigth-side span {
+  color: #fff;
+  font-size: 1.5rem;
+}
+#card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Televisao Smart Tv Multilaser Dled 40 Fullhd Android Usb Wifi Tl045",
+    "preco": 2500.0,
+    "quantidade": 10,
+    "imgurl": "https://http2.mlstatic.com/D_NQ_NP_803260-MLU72645592479_112023-O.webp"
+  },
+  {
+    "nome": "Televisao Smart TV 50 UHD 4K Samsung 50CU7700",
+    "preco": 5000.0,
+    "quantidade": 9,
+    "imgurl": "https://imgs.casasbahia.com.br/55060824/1g.jpg"
+  },
+  {
+    "nome": "Fone de ouvido Bluetooth sem fio Tranya T20",
+    "preco": 250.0,
+    "quantidade": 5,
+    "imgurl": "https://m.media-amazon.com/images/I/61RRYhXgJZL._AC_SL1500_.jpg"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido Sem Fio",
+    "preco": 350.0,
+    "quantidade": 5,
+    "imgurl": "https://m.media-amazon.com/images/I/41vWCL4RlgL._AC_SL1000_.jpg"
+  },
+  {
+    "nome": "Apple iPhone 13 (128 GB) - Meia-noite",
+    "preco": 5000.0,
+    "quantidade": 8,
+    "imgurl": "https://m.media-amazon.com/images/I/41rfDU6FGqL._AC_SL1000_.jpg"
+  },
+  {
+    "nome": "Notebook ideapad Gaming 3 R7-5800H 16GB 512GBSSD GTX 1650 4GB 15.6",
+    "preco": 3000.0,
+    "quantidade": 7,
+    "imgurl": "https://m.media-amazon.com/images/I/513sMBOe4XL._AC_SL1000_.jpg"
+  },
+  {
+    "nome": "Tablet Samsung Galaxy S9, 256GB, WiFi, Tela Imersiva de 11",
+    "preco": 2000.0,
+    "quantidade": 6,
+    "imgurl": "https://m.media-amazon.com/images/I/61xVPuqXIDL._AC_SL1500_.jpg"
+  }
+]

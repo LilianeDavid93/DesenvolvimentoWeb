@@ -1,33 +1,48 @@
 import Nav from "../../components/navbar";
 import "./style.css";
-import img from "../../components/imagens/ponei3.png";
-import img2 from "../../components/imagens/pone1.jpeg";
-import img3 from "../../components/imagens/ponei2.jpeg";
-import img4 from "../../components/imagens/ponei4.jpeg";
-import img5 from "../../components/imagens/ponei5.jpeg";
+import Card from "../../components/card";
+import Produtos from "../../produtos.json";
+import Search from "../../components/search";
+import { useEffect, useState } from "react";
 
 function Home() {
+  const [inputSearch, setInputSearch] = useState("");
+  const [filteredList, setFilteredList] = useState([]);
+
+  useEffect(() => {
+    setFilteredList(
+      Produtos.filter((p) =>
+        p.nome.toLowerCase().includes(inputSearch.toLowerCase())
+      )
+    );
+  }, [inputSearch]);
+
   return (
     <>
       <Nav />
       <div className="logo">
         <div className="titulo">
-          Bem-vindo ao nosso mágico mundo de desenhos de pôneis!
-          <br /> Se você é um fã apaixonado de pôneis adoráveis, aventuras
-          encantadoras e criatividade sem limites, você veio ao lugar certo.
+          Bem-vindo ao nosso universo de tecnologia!
           <br />
-          Nosso site é o destino definitivo para todos os amantes de pôneis e
-          entusiastas de desenho.
-        </div>
-        <div className="imgs">
-          <img src={img} alt="Ponei" />
-          <img src={img2} alt="Ponei" />
-          <img src={img3} alt="Ponei" />
-          <img src={img4} alt="Ponei" />
-          <img src={img5} alt="Ponei" />
+          Explore o futuro, descubra inovações e encontre os melhores produtos
+          eletrônicos para tornar sua vida mais conectada e eficiente.
+          <br />
+          Estamos empolgados em tê-lo conosco.
+          <br />
+          <br />
+          Vamos começar a explorar juntos!
         </div>
       </div>
-
+      <Search inputSearch={inputSearch} setInputSearch={setInputSearch} />
+      <div className="card-section">
+        {filteredList.length > 0
+          ? filteredList.map((produto, i) => {
+              return <Card key={i} produto={produto} />;
+            })
+          : Produtos.map((produto, i) => {
+              return <Card key={i} produto={produto} />;
+            })}
+      </div>
       <div className="rodape"></div>
     </>
   );
